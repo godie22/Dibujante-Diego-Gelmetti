@@ -1,1 +1,129 @@
-# Dibujante-Diego-Gelmetti
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mond Ilustrado</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Archivos de bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilos.css" />
+    <style>
+      /* Para el ancho y alto de las imagenes. Modificalo a gusto =)  */
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+        width: 700px;
+        height: 500px;
+        margin: auto;
+      }
+      /* Para los margenes del contendor de las fotos. Podes cambiarle el ancho a gusto tambien! */
+      .carousel-control {
+        width: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="titulo">
+      <h1>Mondo Ilustrado</h1>
+    </header>
+
+    <div class="container">
+      <br />
+      <div id="carrusel" class="carousel slide" data-ride="carousel">
+        <!-- Opcional, bullets abajo para saltar directamente a una foto (si los pones tiene q haber 1 por foto) -->
+        <ol class="carousel-indicators">
+          <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+          <li data-target="#carrusel" data-slide-to="1"></li>
+          <li data-target="#carrusel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Contenedor de las fotos -->
+        <div class="imagen">
+          <div class="carousel-inner" role="listbox">
+            <!-- Foto 1 -->
+            <div class="item active">
+              <img src="imagenes/foto1.png" alt="Dibujo Gelmetti" />
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="item">
+              <img src="imagenes/foto2.png" alt="Dibujo Gelmetti" />
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="item">
+              <img src="imagenes/foto3.png" alt="Dibujo Gelmetti" />
+            </div>
+
+            <div class="item">
+              <img src="imagenes/foto4.png" alt="Dibujo Gelmetti" />
+            </div>
+
+            <div class="item">
+              <img src="imagenes/foto5.png" alt="Dibujo Gelmetti" />
+            </div>
+
+            <div class="item">
+              <img src="imagenes/foto6.png" alt="Dibujo Gelmetti" />
+            </div>
+
+            <div class="item">
+              <img src="imagenes/foto7.png" alt="Dibujo Gelmetti" />
+            </div>
+
+            <div class="item">
+              <img src="imagenes/foto8.png" alt="Dibujo Gelmetti" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles para pasar las fotos -->
+        <a
+          class="left carousel-control"
+          href="#carrusel"
+          role="button"
+          data-slide="prev"
+        >
+          <span
+            class="glyphicon glyphicon-chevron-left"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="right carousel-control"
+          href="#carrusel"
+          role="button"
+          data-slide="next"
+        >
+          <span
+            class="glyphicon glyphicon-chevron-right"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="containerfoot">
+
+        <div id="unsitio">
+          <h3 >Ilustraciones de Diego Gelmetti</h3>
+        </div>
+
+        <div id="mail">
+          <h4 ><p>Contactame </p>
+            <a href="mailto:gelmi22@yahoo.com.ar" id="sinraya">gelmi22@yahoo.com.ar</a></h4>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+</html>
+
